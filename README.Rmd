@@ -31,12 +31,12 @@ After creating a new repository from this template make sure to update:
 
 ### Actions
 
-This template set's up the following actions:
+This template set's up the following actions on all PR's and pushes to the main branch:
 
-* R-CMD check on PR's and merges to the main branch
-* [`{lintr}`](https://github.com/jimhester/lintr) on all pushes
-* [`{covr}`](https://github.com/r-lib/covr) code coverage on PR's
-* [`{pkgdown}`](https://github.com/r-lib/pkgdown) deployment to GitHub pages on merges to the main branch
+* [R-CMD check](https://r-pkgs.org/r-cmd-check.html) to check your package is valid, passes tests etc.
+* [`{lintr}`](https://github.com/jimhester/lintr) to run static code analysis, will annotate your commits with any issues discovered.
+* [`{covr}`](https://github.com/r-lib/covr) to run code coverage and upload to [codecov.io](https://codecov.io/).
+* [`{pkgdown}`](https://github.com/r-lib/pkgdown) to deploy package documentation to GitHub pages.
 
 These actions will ensure that your package is building correctly, passing tests, and will help you stick to the [tidyverse style guide](https://style.tidyverse.org/).
 
